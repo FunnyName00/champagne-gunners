@@ -23,3 +23,9 @@ texture = ExtResource("1_qcwfp")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1361329080]
 scale = Vector2(3.063, 3.063)
 shape = SubResource("RectangleShape2D_cmdk4")
+
+[node name="Timer" type="Timer" parent="." unique_id=1561134536]
+wait_time = 0.8
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

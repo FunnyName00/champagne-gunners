@@ -1,13 +1,11 @@
 extends RigidBody2D
 
-
 @onready var timer: Timer = $Timer
 @onready var eyes : Sprite2D = $eyes
 
 @export var color :Color
 @export var impulse_strength := 200
 @export var cooldown := 0.8
-
 
 var radius := 100 
 var canShoot := true

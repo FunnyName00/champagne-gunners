@@ -5,13 +5,17 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cmdk4"]
 
-[node name="player_character" type="CharacterBody2D" unique_id=1821164543]
-scale = Vector2(0.5, 0.5)
+[node name="player_character" type="RigidBody2D" unique_id=1151372308]
+gravity_scale = 0.0
+linear_damp = 3.0
 script = ExtResource("1_cmdk4")
+impulse_strength = 400
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1438079076]
+modulate = Color(1, 0, 1, 1)
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_qcwfp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1361329080]
-scale = Vector2(6.125, 6.125)
+scale = Vector2(3.063, 3.063)
 shape = SubResource("RectangleShape2D_cmdk4")

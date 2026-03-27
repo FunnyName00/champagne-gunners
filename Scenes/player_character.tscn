@@ -3,13 +3,19 @@
 [ext_resource type="Script" uid="uid://ccq4yrewvx4es" path="res://Scripts/player_character.gd" id="1_cmdk4"]
 [ext_resource type="Texture2D" uid="uid://crnjg5jum4jnb" path="res://Assets/icon.svg" id="1_qcwfp"]
 
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_cmdk4"]
+friction = 0.5
+bounce = 1.0
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cmdk4"]
 
 [node name="player_character" type="RigidBody2D" unique_id=1151372308]
+physics_material_override = SubResource("PhysicsMaterial_cmdk4")
 gravity_scale = 0.0
-linear_damp = 3.0
+linear_damp = 2.8
 script = ExtResource("1_cmdk4")
-impulse_strength = 400
+impulse_strength = 600
+cooldown = 0.7
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1438079076]
 modulate = Color(1, 0, 1, 1)

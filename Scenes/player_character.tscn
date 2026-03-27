@@ -1,10 +1,13 @@
 [gd_scene format=3 uid="uid://lxicmmeuvsp0"]
 
+[ext_resource type="Script" uid="uid://ccq4yrewvx4es" path="res://Scripts/player_character.gd" id="1_cmdk4"]
 [ext_resource type="Texture2D" uid="uid://crnjg5jum4jnb" path="res://Assets/icon.svg" id="1_qcwfp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cmdk4"]
 
 [node name="player_character" type="CharacterBody2D" unique_id=1821164543]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_cmdk4")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1438079076]
 texture = ExtResource("1_qcwfp")

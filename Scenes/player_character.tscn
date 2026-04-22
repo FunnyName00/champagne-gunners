@@ -15,7 +15,8 @@ gravity_scale = 0.0
 linear_damp = 2.8
 script = ExtResource("1_cmdk4")
 impulse_strength = 600
-cooldown = 0.7
+cooldown = 0.5
+bullet_speed = 600
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1438079076]
 modulate = Color(1, 0, 1, 1)
